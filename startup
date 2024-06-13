@@ -1,0 +1,19 @@
+echo '#set default editor to vi' >> ~/.bashrc
+echo 'export EDITOR=vi' >> ~/.bashrc
+echo '' >> ~/.bashrc
+echo '#custom prompt' >> ~/.bashrc
+echo 'BRACKET_COLOR="\[\033[38;5;35m\]"' >> ~/.bashrc
+echo 'CLOCK_COLOR="\[\033[38;5;35m\]"' >> ~/.bashrc
+echo 'JOB_COLOR="\[\033[38;5;33m\]"' >> ~/.bashrc
+echo 'PATH_COLOR="\[\033[38;5;33m\]"' >> ~/.bashrc
+echo 'LINE_BOTTOM="\342\224\200"' >> ~/.bashrc
+echo 'LINE_BOTTOM_CORNER="\342\224\224"' >> ~/.bashrc
+echo 'LINE_COLOR="\[\033[38;5;248m\]"' >> ~/.bashrc
+echo 'LINE_STRAIGHT="\342\224\200"' >> ~/.bashrc
+echo 'LINE_UPPER_CORNER="\342\224\214"' >> ~/.bashrc
+echo 'END_CHARACTER="|"' >> ~/.bashrc
+echo '' >> ~/.bashrc  # This adds a blank line for clarity
+echo 'tty -s && export PS1="$LINE_COLOR$LINE_UPPER_CORNER$LINE_STRAIGHT$LINE_STRAIGHT$BRACKET_COLOR[$CLOCK_COLOR\t$BRACKET_COLOR]$LINE_COLOR$LINE_STRAIGHT$BRACKET_COLOR[$JOB_COLOR\j$BRACKET_COLOR]$LINE_COLOR$LINE_STRAIGHT$BRACKET_COLOR[\H:\]$PATH_COLOR\w$BRACKET_COLOR]\n$LINE_COLOR$LINE_BOTTOM_CORNER$LINE_STRAIGHT$LINE_BOTTOM$END_CHARACTER\[$(tput sgr0)\] "' >> ~/.bashrc
+
+echo 'alias ls="ls-la"' >> ~/.bashrc
+echo 'alias olama="ssh stanio@192.168.1.195"' >> ~/.bashrc
